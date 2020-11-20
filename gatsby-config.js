@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'Overreacted',
-    author: 'Dan Abramov',
-    description: 'Personal blog by Dan Abramov. I explain with words and code.',
-    siteUrl: 'https://overreacted.io',
+    title: "Shamsi's Blog",
+    author: 'Muhammed Salman Shamsi',
+    description:
+      'Personal blog by Muhammed Salman Shamsi. Happy to share, eager to learn.',
+    siteUrl: 'https://blog.shamsi.dev',
     social: {
-      twitter: '@dan_abramov',
+      twitter: '',
     },
   },
   pathPrefix: '/',
@@ -80,7 +81,7 @@ module.exports = {
               return allMarkdownRemark.edges.map(edge => {
                 const siteUrl = site.siteMetadata.siteUrl;
                 const postText = `
-                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at overreacted.io. You can read it online by <a href="${siteUrl +
+                <div style="margin-top=55px; font-style: italic;">(This is an article posted to my blog at blog.shamsi.dev. You can read it online by <a href="${siteUrl +
                   edge.node.fields.slug}">clicking here</a>.)</div>
               `;
 
@@ -126,7 +127,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "Dan Abramov's Overreacted Blog RSS Feed",
+            title: "Shamsi's Blog RSS Feed",
           },
         ],
       },
@@ -134,7 +135,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-ebook`,
       options: {
-        filename: 'overreacted-ebook.epub',
+        filename: "shamsi's-blog-ebook.epub",
         query: `
           {
             site {
@@ -165,8 +166,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Overreacted`,
-        short_name: `Overreacted`,
+        name: `Shamsi's Blog`,
+        short_name: `Shamsi's Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffa7c4`,
