@@ -9,4 +9,8 @@ cta: 'general'
 
 It is good to be back after a long time.
 
-See you in the next post.
+Do visit my [personal website](https://shamsi.dev) 
+
+See you in the next post.[](/dummycontent/)
+
+Bye!
